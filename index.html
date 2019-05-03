@@ -1,0 +1,143 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, AMPs</title>
+  <link rel="canonical" href="https://amp.dev/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  
+  <style amp-custom>
+    body {
+      background-color: rgb(245, 239, 239);
+      width: auto;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    amp-img {
+      background-color: rgb(104, 98, 98);
+      border: 1px solid rgb(12, 11, 11);
+    }
+
+    .hamburger {
+      padding-left: 10px;
+      color: rgb(243, 236, 236);
+      cursor: pointer;
+    }
+    .hamburger:hover {
+      color: rgb(197, 90, 90);
+    }
+
+    .home{
+      margin-left: 10px;
+      font-size: 18px;
+      text-align: center;
+      color: rgb(243, 236, 236);
+      text-decoration: none;
+    }
+    .home:hover{
+      color: rgb(197, 90, 90);
+    }
+    .sidebar {
+      padding: 10px;
+      margin: 0;
+    }
+
+    .sidebar>li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+    }
+
+    .close-sidebar {
+      font-size: 1.5em;
+      padding-left: 5px;
+    }
+    .home-button {
+      margin-top: 0px;
+      color: rgb(243, 236, 236);
+    }
+
+    .headerbar {
+      height: 50px;
+      position: fixed;
+      z-index: 999;
+      background-color: rgb(104, 98, 98);
+      margin-bottom: 50px;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+
+  </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
+  <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+  </noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+</head>
+
+<body>
+
+  <header class="headerbar">
+    <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+    <div class="site-name">
+        <a class="home" href="index.html">
+          AMP Site
+        </a>
+    </div>
+  </header>
+
+  <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+    <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+    <ul class="sidebar">
+      <li><a href="#exe1">Example 1</a></li>
+      <li><a href="#exe2">Example 2</a></li>
+      <li><a href="#exe3">Example 3</a></li>
+    </ul>
+  </amp-sidebar>
+
+  <amp-img src="img/4.jpg" alt="Welcome" height="200" width="300" layout="responsive"></amp-img>
+  <h1>Welcome to the mobile web</h1>
+
+  
+  <div id="exe1">
+    <h2>Example 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque, enim distinctio, accusantium debitis rem modi
+      reiciendis itaque molestias voluptatem, maiores facere. Eum amet nostrum saepe enim possimus nemo architecto.</p>
+  </div>
+  <div id="exe2">
+    <h2>Example 2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos debitis nisi blanditiis amet.
+      Accusamus distinctio eius at eos! Dignissimos dolorum hic omnis velit quibusdam excepturi fuga unde vitae
+      voluptate!</p>
+  </div>
+  <div id="exe3">
+    <h2>Example 3</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit recusandae laudantium sed, natus officiis
+      perferendis sequi velit numquam voluptate rerum magni, hic corrupti molestiae debitis, porro maxime expedita
+      totam repudiandae?</p>
+  </div>
+</body>
+
+</html>
